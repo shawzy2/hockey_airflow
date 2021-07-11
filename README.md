@@ -40,3 +40,8 @@ Well, since we’re using Airflow, we can schedule the model to pull data from S
 Additionally, Airflow gives us resilience in scenarios where API calls fail and need to be re-tried. 
 When processes upstream fail (i.e. step 1 in architecture section), they can be re-tried before proceeding to downstream processes (i.e. future ML model training).
 
+### Final Product Screenshots
+Here we see the end product of my work. On the left is a screenshot of Airflow's UI showing the order of tasks run in this pipeline. On the right is a preview of the format used to organize data within S3.
+Airflow: Graph View of DAG |  S3: Goal Data per Game
+:-------------------------:|:-------------------------:
+![](https://user-images.githubusercontent.com/19720687/125184916-91886300-e1ef-11eb-8549-06f7b02a9095.png)  |  ![](https://user-images.githubusercontent.com/19720687/125184919-9220f980-e1ef-11eb-9dcb-42aede661fd3.png)
