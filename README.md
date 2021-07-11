@@ -14,7 +14,7 @@ This is the exact use case we need for updating datasets with the previous gameâ
 
 
 ### Architecture
-image
+![hockey_airflow_design](https://user-images.githubusercontent.com/19720687/125180229-b071ff80-e1c5-11eb-8c6e-633432ba468e.png)
 
 Above we see the architecture that will be used to implement automated data scrapes. To expand on each step:
 * Step 1: Fetch list of gameIdâ€™s that occurred on previous day
