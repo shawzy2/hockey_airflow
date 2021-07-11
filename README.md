@@ -4,11 +4,11 @@
 * Future Direction
 
 ### Automate Data Scrapes from NHL's Public API
-The NHL provides a public API to fans for the purposes of experimental analysis. 
+The NHL provides a [public API](https://gitlab.com/dword4/nhlapi) to fans for the purposes of experimental analysis. 
 The API can be accessed via python requests library and used in hockey data science processes such as hypothesis testing, reporting analytics, and building machine learning models. 
 While valuable on its own, the API can be coupled with software to automate daily web scrapes and seamlessly feed analytics dashboards and ML models the freshest data available.
 
-One way to automate data ingestion is Apache Airflow. 
+One way to automate data ingestion is [Apache Airflow](https://airflow.apache.org/). 
 Generally used for ETL pipelines, Airflow is a platform used to programmatically schedule and monitor workflows. 
 This is the exact use case we need for updating datasets with the previous game’s data.
 
@@ -33,7 +33,7 @@ Above we see the architecture that will be used to implement automated data scra
 * Step 4: Store data in S3
 
 ### Why Apache Airflow? Why not a simple Lambda function?
-While the task of scheduling GET calls to an API, processing data, and delivering into S3 buckets can be achieved using a simple Lambda function, Airflow enables many valuable features down the road. 
+While the task of scheduling GET calls to an API, processing data, and delivering into S3 buckets can be achieved using a simple [Lambda](https://aws.amazon.com/lambda/) function, Airflow enables many valuable features down the road. 
 For example, say we want to add an ML model that re-trained when new data was available. 
 Well, since we’re using Airflow, we can schedule the model to pull data from S3 immediately after data delivery is finished.
 
