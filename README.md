@@ -1,7 +1,8 @@
 # hockey_airflow
 * About the Project ⬇️
-* Developer's Guide
-* Future Direction
+* [Installation Guide](https://github.com/shawzy2/hockey_airflow/wiki/Installation-Guide)
+* [Developer’s Guide](https://github.com/shawzy2/hockey_airflow/wiki/Developer's-Guide)
+* [Future Direction](https://github.com/shawzy2/hockey_airflow/wiki/Future-Direction)
 
 ### Automate Data Scrapes from NHL's Public API
 The NHL provides a [public API](https://gitlab.com/dword4/nhlapi) to fans for the purposes of experimental analysis. 
